@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">3L Educacional</string>
+    <string name="app_name">3L Educational</string>
+    <string name="about">
+        Este APP foi pensado para concentrar a maioria dos exercícios aplicados em escolas.<br /><br />
+        Apenas no intuito de ajudar os alunos em momentos de estudos em suas casas.<br /><br />
+        Para consultas, apenas isso.<br /><br />
+        Muito obrigado por usar.
+        Por favor, dê 5 estrelas.
+    </string>
+    <string name="strings">\@string/app_name</string>
 </resources>

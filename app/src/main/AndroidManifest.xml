@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.a3l.a3leducacional">
+    package="com.lucianomarinho.threeleducational">
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/treseleeducacional">
-        <activity android:name=".MainActivity"
-            android:theme="@style/treseleeducacional">
+        android:theme="@style/threeleducational">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/threeleducational">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.github.com"
+                    android:pathPattern="/nickmarinho/3l-educacional" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/app_name" >
         </activity>
     </application>
 
